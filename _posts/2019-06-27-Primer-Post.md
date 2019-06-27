@@ -1,13 +1,15 @@
 ---
 layout: post
-title: You're up and running!
+title: Whatsapp Gateway
 ---
 
-Primer articulo
-# Sección 1
-jejje
- ![primer foto]({{site.baseurl}}/images/DSC_0564.JPG)
-# Subsección 1
+# Introducción
+Many companies would like to have an application to send whatsapp messages since its the messaging service par excellence and almost everyone uses it, so they would reach more people.
+Today I come to introduce you a small script made in java that allows you to send a whatsapp message to a client through a phone line without the need to connect to whatsapp.
+# Basic concepts
+To start programming first we need to understand some concepts.
+First, everybody have a whatsapp ID. the whatsapp ID is our telephone number with the prefix of the country.
+
  joffos
 ```java
 int x=1;
