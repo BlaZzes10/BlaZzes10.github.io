@@ -2,6 +2,7 @@
 layout: post
 title: Whatsapp Gateway
 subtitle: Send whatsapp messages using Java
+
 ---
 
 # Introduction
