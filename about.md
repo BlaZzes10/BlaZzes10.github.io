@@ -10,4 +10,4 @@ Mi nombre es Tomás Jesús García López. Soy estudiante de ingeniería inform�
 
 ### Contact me
 
-[email@domain.com](mailto:tomi.carrion@gmail.com)
+[E-mail](mailto:tomi.carrion@gmail.com)
