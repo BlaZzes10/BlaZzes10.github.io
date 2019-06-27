@@ -4,12 +4,10 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
-
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+Mi nombre es Tomás Jesús García López. Soy estudiante de ingeniería informática en Ciudad Real, también me encanta el tema de la seguridad.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[email@domain.com](mailto:tomi.carrion@gmail.com)
