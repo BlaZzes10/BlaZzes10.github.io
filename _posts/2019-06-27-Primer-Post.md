@@ -18,6 +18,11 @@ URL_GATEWAY is our host url that sends the message.
   private static final String URL_GATEWAY = ""; // TU HOST QUE HARA COMO GATEWAY
   ```
 # Rest of code
+
+The following code will try to send a whatsapp message to the destination number.
+Its worth mentioning that all this code could be integrated into a graphical interface (swing). 
+In subsequent posts I will bring this code in an graphical interface.
+
 ```java
  public static void main(String[] args) throws Exception {
     String numero = "1321425";  // Número telefónico del destinatario, junto con su código de pais
@@ -67,6 +72,3 @@ URL_GATEWAY is our host url that sends the message.
 	  conex.setRequestProperty("Content-Type", "application/json");
   }
 ```
-The following code will try to send a whatsapp message to the destination number.
-Its worth mentioning that all this code could be integrated into a graphical interface (swing). 
-In subsequent posts I will bring this code in an graphical interface.
