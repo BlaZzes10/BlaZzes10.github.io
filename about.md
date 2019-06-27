@@ -4,10 +4,10 @@ title: About
 permalink: /about/
 ---
 
-### More Information
+### Acerca de mi
 
 Mi nombre es Tomás Jesús García López. Soy estudiante de ingeniería informática en Ciudad Real, también me encanta el tema de la seguridad.
 
-### Contact me
+### Contacto
 
 [E-mail](mailto:tomi.carrion@gmail.com)
