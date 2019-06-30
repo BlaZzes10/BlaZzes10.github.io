@@ -1,12 +1,13 @@
 ---
 layout: page
-title: Sobre mi
+title: About me
 permalink: /about/
 ---
 
-### Acerca de mi
+### My Information
 
-Mi nombre es Tomás Jesús García López. Soy estudiante de ingeniería informática en Ciudad Real, también me encanta el tema de la seguridad.
+My name is Tomás Jesús García López. Actually, I am studying Computer Engineer at the University in Ciudad Real.
+Moreover, I am to be into informatic security
 
 ### Contacto
 
