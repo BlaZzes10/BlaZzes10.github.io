@@ -26,6 +26,10 @@ la cual nos permitirá infectar el equipo y con meterpreter poder acceder a todo
 En la IP cada uno pondra su ip, se puede mirar abriendo la terminal y escribiendo el siguiente comando `ifconfig`, dependiendo si teneis vuestro computador enchufado por cable o lo teneis inalámbrico estará en una interfaz o otra. Esa IP es privada, es decir, solo os servirá para vuestra propia red, no obstante se puede crear este exploit y sacarlo fuera de la red local(LAN), pero eso lo dejare para otro post. Dicho esto yo usare mi IP privada y un puerto efímero, el 5000 por ejemplo.
 
 ![Foto1](/images/foto1.png)
+ 
+Bien, para terminar de construir este exploit hay que tranformarlo a base64 para poder ejecutarlo directamente en la computadora victima, asique escribiremos lo siguiente: `base64 exploit > exploit.b64`. Podemos comprobar que ha sido construido satisfactoriamente con el comando `cat exploit.b64`.
+
+![Foto2](/images/foto2.png)
 
 
 
