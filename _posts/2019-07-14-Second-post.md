@@ -13,7 +13,8 @@ Para comenzar necesitaremos lo siguiente:
   
 Cabe mencionar que necesitamos comprar el Digispark, yo lo compré en Amazon, 3 por casi 10 euros y sin duda merece la pena, se puede hacer
 tales cantidades de proyectos..
-Todo lo que explico es con fines educativos, no me hago responsable del mal uso que le hagais a este post, simplemente me gusta enseñar las habilidades de hacking etico que conozco con el fin de que aprendais como podeis ser atacados y saber defenderos.
+
+Todo lo que explico es con fines educativos, no me hago responsable del mal uso que le hagais a este post, simplemente me gusta enseñar las habilidades de hacking ético que conozco con el fin de que aprendais como podeis ser atacados y saber defenderos.
 
 # Construyendo el exploit
 Para crear el exploit debemos usar la herramienta msfvenom y excribir la siguiente linea de código: 
@@ -23,6 +24,8 @@ Para crear el exploit debemos usar la herramienta msfvenom y excribir la siguien
 Como podemos observar lo que crearemos es un exploit el cual, al ejecutarse en el equipo victima (con distribución linux) nos abrira una conexión tcp
 la cual nos permitirá infectar el equipo y con meterpreter poder acceder a todos sus archivos. 
 En la IP cada uno pondra su ip, se puede mirar abriendo la terminal y escribiendo el siguiente comando `ifconfig`, dependiendo si teneis vuestro computador enchufado por cable o lo teneis inalámbrico estará en una interfaz o otra. Esa IP es privada, es decir, solo os servirá para vuestra propia red, no obstante se puede crear este exploit y sacarlo fuera de la red local(LAN), pero eso lo dejare para otro post. Dicho esto yo usare mi IP privada y un puerto efímero, el 5000 por ejemplo.
+
+![Foto1](/images/foto1.png)
 
 
 
