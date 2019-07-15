@@ -108,3 +108,9 @@ DigiKeyboard.sendKeyStroke(KEY_7,MOD_SHIFT_RIGHT);
 DigiKeyboard.print("huAEAAAC7AQAAAM2A ");
 {% endhighlight %}
 Ahi apreciais como separo el payload, escribo la barra `/` y ya continuo. Os menciono esto por si, a la hora de escribir vuestro payload, como evidentemente el valor cambia, os adelanto este problema.
+Para terminar esta parte, verificaremos nuestro programa, le daremos a subir y introduciremos el Digispark. Una vez subido podemos desenchufarlo y ya preparar la siguiente parte que es configurar metasploit. ¡¡Ya queda poco!!
+
+# Configurando msfconsole
+Llegados hasta aqui, ahora solo nos queda la parte divertida, configuraremos msfconsole para que se ponga a la escucha de conexiones TCP y explotar el sistema cuando se ejecute el payload en el equipo víctima. bien empezemos:
+  - Ejecutamos en una terminal msfconsole -q (-q es para que no nos aparezca el banner)
+  -
