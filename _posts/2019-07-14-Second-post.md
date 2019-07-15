@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Basic Exploit with Digispark
+youtubeId: watch?v=oS6aXcag_0c&feature=youtu.be
 
 ---
 # Introducción
@@ -132,4 +133,4 @@ Bien, por fin hemos llegado a la prueba de la verdad, es hora de enchufar nuestr
 
 Aqui os dejo un pequeño video de lo que ocurre al enchufar nuestro Digispark, espero que os haya gustado, cualquier duda dejenmelo saber enviandome un mail.
 
-  
+{% include youtubePlayer.html id=page.youtubeId %}
