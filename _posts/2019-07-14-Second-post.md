@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Basic Exploit with Digispark
-youtubeId: watch?v=oS6aXcag_0c&feature=youtu.be
+youtubeId: oS6aXcag_0c
 
 ---
 # Introducción
