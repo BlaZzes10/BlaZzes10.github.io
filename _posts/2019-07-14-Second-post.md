@@ -120,7 +120,7 @@ Llegados hasta aqui, ahora solo nos queda la parte divertida, configuraremos msf
   
 Siempre podemos usar `show options` para ver si hemos configurado correctamente todo.
   
-  [foto3](/images/foto3.png)
+![foto3](/images/foto3.png)
   
 Llegados a este punto ya podriamos probar si funciona nuestra prueba...
 
